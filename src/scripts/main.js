@@ -12,7 +12,7 @@ $(document).ready(function () {
     var projetos = [
       {
           nome: "Food - Landing Page",
-          imagem: "D:\Programacao\Projetos\portfol-io\dist\images\projetos\food-landingpage.gif",
+          imagem: "..\dist\images\projetos\food-landingpage.gif",
           descricao: "Landing page para um restaurante ficticio - by Larissa Kich",
           github: "https://github.com/Lxcier/food-landingPage",
           vercel: "https://food-landing-page-flame.vercel.app/",
