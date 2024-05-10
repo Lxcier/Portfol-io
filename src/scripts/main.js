@@ -12,7 +12,7 @@ $(document).ready(function () {
     var projetos = [
       {
           nome: "Food - Landing Page",
-          imagem: "/images/projetos/food-landingpage.gif",
+          imagem: "D:\Programacao\Projetos\portfol-io\dist\images\projetos\food-landingpage.gif",
           descricao: "Landing page para um restaurante ficticio - by Larissa Kich",
           github: "https://github.com/Lxcier/food-landingPage",
           vercel: "https://food-landing-page-flame.vercel.app/",
@@ -201,7 +201,7 @@ $(document).ready(function () {
     // Adicionar HTML do projeto
     elemento.append(
     `
-    <img src=${projeto.imagem} alt=${projeto.nome} class="project-gif rounded-t-lg w-full">
+    <img src="${projeto.imagem}" alt=${projeto.nome} class="project-gif rounded-t-lg w-full">
     <div class="p-4 relative">
       <h3 class="text-xl text-white font-semibold mb-2">${projeto.nome}</h3>
       <p class="description text-gray-400 text-sm mb-4 h-16 overflow-y-scroll scroll-smooth">${projeto.descricao}</p>
