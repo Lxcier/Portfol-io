@@ -4,7 +4,7 @@
   "browserslist": "> 0.25%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel watch src/index.html src/styles/main.css src/scripts/main.js",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html src/scripts/main.js"
   },
   "keywords": [],
   "author": "",
