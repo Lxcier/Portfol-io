@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfol.io</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./styles/main.css" type="text/css" rel="stylesheet">
+</head>
+<body class="bg-gray-800">
+    <header id="header">
+        <div class="container mx-auto">
+            <nav class="d-flex--center">
+                <div id="logo">
+                    <img  id="logo-image" src="/src/images/gifs/logo_end.png" alt="Logo do Portifólio by Freepik">
+                    <span id="logo-span" class="animate__animated animate__fadeInLeft">Lucas Lucier</span>
+                </div>
+                <ul id="social-list">
+                    <li class="social_list_item">
+                        <a target="_blank" href="https://github.com/Lxcier" class="flex items-center">
+                          <img src="/src/images/icons/github.png" alt="GitHub" class="w-7 h-7 mr-2">
+                          GitHub
+                        </a>
+                    </li>
+                    <li class="social_list_item">
+                    <a target="_blank" href="https://www.linkedin.com/in/lucaslucier" class="flex items-center">
+                        <img src="https://www.linkedin.com/favicon.ico" alt="Linkedin" class="w-7 h-7 mr-2">
+                        Linkedin
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content" class="bg-fixed">
+        <div class="container mx-auto relative">
+            <section id="hero" class="flex justify-between relative">
+                <nav id="navbar" class="fixed">
+                    <ul id="navbar-list">
+                        <li class="navbar_list_item">
+                            <a href="#sobre" data-tab-button="sobre" id="about_link" class="item_link item_link--is-active animate_animated">
+                            <i class="icon-normal bi bi-house"></i> 
+                            <i class="icon-active bi bi-house-fill"></i>
+                            Sobre
+                            </a>
+                        </li>
+                        <li class="navbar_list_item">
+                            <a href="#habilidades" data-tab-button="habilidades" class="item_link animate_animated">
+                            <i class="icon-normal bi bi-file-code"></i>
+                            <i class="icon-active bi bi-file-code-fill"></i>
+                            Habilidades
+                            </a>
+                        </li>
+                        <li class="navbar_list_item">
+                            <a href="#projetos" data-tab-button="projetos" class="item_link animate_animated">
+                            <i class="icon-normal bi bi-archive"></i>
+                            <i class="icon-active bi bi-archive-fill"></i>
+                            Projetos
+                            </a>
+                        </li>
+                        <li class="navbar_list_item">
+                            <a href="#contato" data-tab-button="contato" class="item_link animate_animated">
+                            <i class="icon-normal bi bi-chat"></i> 
+                            <i class="icon-active bi bi-chat-fill"></i> 
+                            Contato
+                            </a>
+                        </li>
+                    </ul>  
+                </nav>
+
+                <aside data-tab-id="sobre" id="about" class="tab tab--is-active animate__animated animate__faster">
+                    <div class="d-flex--center">
+                        <div class="flex-gap-4">
+                            <img src="images/gifs/work-office.gif" alt="Gif de um penguin trabalhando" class="tab_image">
+                            <div id="me_text" class="text-start">
+                                <h1 class="text-4xl text-white font-bold">Lucas <span class="text-blue-500">Lucier</span></h1>
+                                <h2 class="tab_subtitle">Desenvolvedor Front-end Jr</h2>
+                            </div>
+                        </div>
+                        <img src="/src/images/icons/ebac_logo.svg" alt="Logo da EBAC" id="selo">
+                    </div>
+                    <hr class="my-7">
+                    <div>
+                        <h2 class="title_1 mb-3">Linguagens em desenvolvimento:</h2>
+                        <ul id="about_list" class="flex gap-4">
+                            <li>
+                                <a href="#" class="skill_icon">
+                                    <img alt="Lxcier-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
+                                    <p class="text-white mt-1">TypeScript</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="skill_icon">
+                                    <img alt="Lxcier-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+                                    <p class="text-white mt-1">React</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="skill_icon">
+                                    <img alt="Lxcier-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg">
+                                    <p class="text-white mt-1">TailwindCSS</p>
+                                </a>
+                            </li>
+                        </ul>
+                            <div class="mt-5">
+                                <h2 class="title_1">Certificações:</h2>
+                                <ul class="flex flex-col gap-4">
+                                    <li>
+                                        <p class="text-white">Desenvolvedor Front-end - EBAC (Cursando - 60%)</p>
+                                    </li>
+                                    <li>
+                                        <p class="text-white">ImersãoIA - Alura (cursando)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </aside>
+
+                <aside data-tab-id="habilidades" id="skills" class="tab animate__animated animate__faster">
+                    <div class="d-flex--center">
+                        <div id="skills_container" class="flex-gap-4">
+                            <img src="images/gifs/skills.gif" alt="by Pudgy Penguins" class="tab_image">
+                            <div class="text-start">
+                            <h2 class="tab_subtitle">Estas são as minhas</h2>
+                            <h1 class="title_2">Habilidades</h1>
+                            </div>
+                        </div>
+                        <img src="/src/images/icons/ebac_logo.svg" alt="Logo da EBAC" id="selo">
+                    </div>
+                    <hr class="my-7">
+                    <div class="flex gap-1 relative justify-center">
+                        <div>
+                            <a data-skill-button="hard-skills" id="hard_btn" class="skills_btn--is-active skills_btn">
+                                Hard skills
+                            </a>
+                            <div class="text_container-hard animate__animated animate__faster">
+                                <div id="hard_skill-text" class="hard_skill-text--is-active ">
+                                    <p class="skill-description">
+                                        As <span class="text-red-400 font-bold">hard skills</span> são habilidades e capacidades técnicas de um profissional. Elas são específicas e podem ser adquiridas por meio de estudos, treinamentos, formações acadêmicas e experiências profissionais acumuladas ao longo da carreira. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-skill-button="soft-skills" id="soft_btn" class="skills_btn">
+                                Soft skills
+                            </a>
+                            <div class="text_container-soft animate__animated animate__faster">
+                                <div id="soft_skill-text" class="soft_skill-text--is-active">
+                                    <p class="skill-description">
+                                        <span class="text-blue-400 font-bold">Soft skills</span> são habilidades comportamentais relacionadas a maneira como o profissional lida com o outro e consigo mesmo em diferentes situações. As soft skills, diferentemente das hard skills, são habilidades subjetivas, mais difíceis de serem mensuradas. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-skill-id="hard-skills" class="animate__animated animate__faster info info--is-active flex items-center gap-8 mt-4">
+                        <div id="linguagens">
+                            <h2 class="title_1">Principais linguagens:</h2>
+                            <ul class="flex gap-4">
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                        <p class="text-white mt-1">HTML5</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                        <p class="text-white mt-1">CSS3</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+                                        <p class="text-white mt-1">JavaScript</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="frameworks">
+                            <h2 class="title_1">Frameworks:</h2>
+                            <ul class="flex gap-4">
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+                                        <p class="text-white mt-1">Bootstrap</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-jQuery" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg">
+                                        <p class="text-white mt-1">jQuery</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="ferramentas">
+                            <h2 class="title_1">Ferramentas:</h2>
+                            <ul class="flex gap-4">
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-Nodejs" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+                                        <p class="text-white mt-1">Node</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-Gulp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg">
+                                        <p class="text-white mt-1">Gulp</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skill_icon">
+                                        <img alt="Lxcier-sass" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
+                                        <p class="text-white mt-1">SASS</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-skill-id="soft-skills" class="animate__animated animate__faster info flex flex-col gap-8 mt-4">
+                        <div>
+                            <h2 class="text-white text-lg font-bold">Habilidades <span class="text-green-600">Interpessoais</span></h2>
+                            <ul class="flex flex-wrap gap-2 mt-2">
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Autodisciplina</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        <p>Capacidade de se manter focado e cumprir tarefas sem supervisão externa.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Compromisso</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        <p>Dedicação e responsabilidade para atingir objetivos e cumprir prazos.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Curiosidade</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        <p>Desejo de aprender e explorar novos conhecimentos e habilidades.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Motivação</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        <p>Entusiasmo e energia para realizar tarefas e alcançar metas.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Responsabilidade</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        <p>Capacidade de assumir obrigações e cumpri-las de forma confiável.</p>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div> 
+                        <div>
+                            <h2 class="text-white text-lg font-bold">Habilidades <span class="text-yellow-500">Sociais</span></h2>
+                            <ul class="flex flex-wrap gap-2 mt-2">
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Aberto a críticas</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Capacidade de receber feedback de forma construtiva e usá-lo para melhorar.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Companherismo</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Capacidade de construir relacionamentos positivos e trabalhar em equipe.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Comunicação</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Habilidade de transmitir informações de forma clara e eficaz.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Empatia</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Capacidade de entender e compartilhar os sentimentos dos outros.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Humildade</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Capacidade de reconhecer as próprias limitações e estar aberto ao aprendizado.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Trabalho em equipe</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                    <p>Habilidade de colaborar com outras pessoas para atingir um objetivo comum.</p>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div> 
+                        <div>
+                            <h2 class="text-white text-lg font-bold">Habilidades <span class="text-indigo-500">Metódicas</span></h2>
+                            <ul class="flex flex-wrap gap-2 mt-2">
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Aprendizado contínuo</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        >Dedicação para adquirir novos conhecimentos e habilidades ao longo do tempo.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Capacidade analítica</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        >Habilidade de coletar, interpretar e analisar informações para tomar decisões.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Iniciativa</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        >Capacidade de tomar ações proativas e identificar oportunidades.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Organização</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        >Habilidade de planejar, priorizar e gerenciar tarefas de forma eficiente.</p>
+                                    </div>
+                                </li> 
+                                <li class="item-habilidade cursor-pointer w-fit bg-gray-800 opacity-80 p-2 rounded transform transition-shadow hover:scale-95 relative group"> 
+                                    <span class="text-white font-semibold">Resolução de problemas</span> 
+                                    <div class="descricao-habilidade hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm">
+                                        >Capacidade de identificar, analisar e encontrar soluções para problemas.</p>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside data-tab-id="projetos" id="projects" class="tab animate__animated animate__faster">
+                    <div class="d-flex--center">
+                      <div id="projetos_container" class="flex-gap-4">
+                        <img src="/src/images/icons/logo.gif" alt="by Pudgy Penguins" class="tab_image">
+                        <div id="me_text" class="text-start">
+                          <h2 class="tab_subtitle">Alguns dos meus</h2>
+                          <h1 class="title_2">Projetos</h1>
+                        </div>
+                      </div>
+                      <img src="/src/images/icons/ebac_logo.svg" alt="Logo da EBAC" id="selo" class="">
+                    </div>
+                    <hr class="my-7">
+                    <div class="mb-4">
+                      <label for="tech-select" class="text-white mr-2">Filtrar por Tecnologia:</label>
+                      <select id="tech-select" class="bg-gray-900 text-white rounded-md p-2">
+                          <option value="">Todas</option>
+                          <option value="html">HTML</option>
+                          <option value="css">CSS</option>
+                          <option value="javascript">JavaScript</option>
+                      </select>
+                      <h2 class="text-lg text-white font-bold mt-3 uppercase">Mais recente</h2>
+                      <div class="projeto_recente">
+                        <div class="px-4 py-2 relative top-20">
+                          <div class="d-flex--center relative mt-17">
+                            <div class="bg-gray-500 bg-opacity-20 p-1 rounded-sm">
+                              <h3 class="text-xl text-white font-bold mb-2">Food - Landing Page</h3>
+                              <p class="text-yellow-200 font-medium text-sm">Landing page para um restaurante ficticio - by Larissa Kich</p>
+                            </div>
+                            <div class="flex gap-4">
+                              <a href="https://github.com/Lxcier/food-landingPage" target="_blank" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded inline-flex items-center">
+                                <i class="bi bi-github mr-2"></i>
+                                GitHub
+                              </a>
+                              <a href="https://food-landing-page-flame.vercel.app/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded inline-flex items-center">
+                                <i class="bi bi-box-arrow-up-right mr-2"></i>
+                                Vercel
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex slider cursor-move overflow-x-scroll gap-6 w-full pb-3" id="projetos-grid">
+                      
+                    </div>
+                  </aside>
+                  <aside data-tab-id="contato" id="contact" class="tab animate__animated animate__faster">
+                    <div class="flex items-center justify-between">
+                      <div id="contact_container" class="flex-gap-4">
+                        <img src="images/gifs/phone-talking.gif" alt="by Pudgy Penguins" class="w-28 h-28"> 
+                        <div id="me_text" class="text-start">
+                          <h2 class="text-xl text-white font-semibold">Entre em</h2>
+                          <h1 class="text-4xl font-bold text-blue-500">Contato</h1>
+                        </div>
+                      </div>
+                      <img src="/src/images/icons/ebac_logo.svg" alt="Logo da EBAC" id="selo" class="">
+                    </div>
+                    <hr class="my-7">
+                    <div>
+                      <p class="text-white text-center">
+                        Percebi que ainda não sei fazer a integração para receber e-mails através de formulários. <br>
+                        Preciso aprender isso logo...
+                        Então, aqui não teremos formulários bonitinhos.
+                      </p>
+                      <p class="text-white text-center mt-6">
+                        Se tem algum interesse em me contratar <span class="text-blue-500 font-semibold">clique no botão abaixo</span>
+                      </p>
+                      <button class="block text-white shadow-sm m-auto mt-12 p-3 bg-gray-800 rounded transform hover:scale-95 transition-shadow">
+                        <a href="mailto:dev.lxcier@gmail.com">Enviar e-mail</a>
+                      </button>
+                    </div>
+                  </aside>
+                </section>
+            </div>
+    </main>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/src/scripts/main.js"></script>
+</body>
+</html>

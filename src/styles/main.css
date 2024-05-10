@@ -1,0 +1,265 @@
+@import 'animate.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Configurações Gerais */
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+#header {
+    @apply sticky top-0 z-10 bg-transparent h-20 flex items-center;
+}
+
+.d-flex--center {
+    @apply flex items-center justify-between;
+}
+
+.flex-gap-4 {
+    @apply flex items-center gap-4;
+}
+
+#logo {
+    @apply flex items-center gap-1 cursor-pointer transform transition-all hover:scale-95 ;
+}
+
+#logo-image {
+    @apply w-16 h-16 rounded-full;
+}
+
+#logo-span {
+    @apply text-white uppercase font-bold;
+}
+
+#social-list {
+    @apply flex space-x-4 items-center text-white;
+}
+
+#social-list .social_list_item {
+    @apply p-2 rounded transition-all duration-300 transform hover:bg-gray-700 hover:text-blue-400   hover:scale-110;
+}
+
+#content {
+    margin: auto;
+    height: auto;
+    background-image: url("/src/images/background.gif");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -80px;
+    padding-top: 80px;
+    padding-bottom: 20vh;
+    overflow-y: hidden;
+}
+
+#content::before,
+.projeto_recente::before,
+.projeto::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: .5;
+}
+
+.projeto_recente::before,
+.projeto::before {
+  opacity: .3;
+}
+
+#navbar {
+    @apply bg-gray-800 bg-opacity-60 rounded-3xl p-7;
+}
+
+#navbar-list {
+    @apply flex flex-col space-y-4 gap-y-3 ;
+}
+
+#navbar-list .navbar_list_item {
+    @apply py-1 pl-1 pr-2 rounded transition-all duration-300 transform  hover:bg-gray-700 hover:scale-105;
+}
+
+#navbar-list .navbar_list_item .item_link {
+    @apply flex items-center justify-center w-full text-white uppercase font-bold hover:text-blue-400 gap-1;
+}
+
+aside {
+    @apply w-4/5 bg-gray-800 bg-opacity-60 rounded-3xl p-7;
+    margin-left: calc(268px + 28px);
+}
+
+.tab_image {
+    @apply rounded-full w-28 h-28;
+}
+
+.title_1 {
+    @apply text-lg text-white font-bold mb-3;
+}
+
+.title_2 {
+    @apply text-4xl font-bold text-blue-500;
+}
+
+.tab_subtitle {
+    @apply text-xl text-white font-semibold;
+}
+
+.skill_icon {
+    @apply flex flex-col items-center transform duration-100 transition-shadow hover:scale-105;
+} 
+.skills_btn {
+    @apply inline-block cursor-pointer text-sm text-red-400 font-semibold p-3 shadow-md bg-gray-800 bg-opacity-50 rounded transform duration-100 transition-shadow hover:scale-95;
+}
+#soft_btn {
+    @apply text-blue-400;
+}
+.text_container-hard,
+.text_container-soft {
+    @apply w-60 absolute z-10 mt-2 rounded bg-gray-800 bg-opacity-80;
+}
+.skill-description {
+    @apply text-white font-medium text-sm p-3;
+}
+.projeto_recente {
+    @apply relative mt-2 mb-4 h-40 bg-gray-900 rounded-lg shadow-md hover:shadow-lg transform transition-shadow duration-300;
+}
+
+.projeto-recente::before,
+.projeto::before {
+  opacity: .3;
+}
+
+/* Controle de Visibilidade */
+.tab,
+.info {
+  display: none;
+}
+
+.tab--is-active {
+  display: block;
+  height: 100%;
+}
+
+.text_container-hard,
+.text_container-soft {
+  display: none;
+}
+
+.text_container--is-active {
+  display: block;
+}
+
+.info--is-active {
+  display: flex;
+}
+
+/* Estilização do Botão do Menu */
+.item-link {
+  transition: .3s ease;
+}
+
+.item-link--is-active {
+  display: block;
+  background-color: rgb(55, 65, 81);
+  transform: scale(1.03);
+  color: rgb(96, 165, 250);
+  border-radius: 4px;
+}
+
+.icon-normal {
+  display: inline;
+}
+
+.icon-active {
+  display: none;
+}
+
+.item-link--is-active .icon-normal {
+  display: none;
+}
+
+.item-link--is-active .icon-active {
+  display: inline;
+}
+
+/* Estilização dos Itens de Habilidade */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: 100ms;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+}
+
+/* Estilização do Projeto Recente */
+.projeto_recente {
+  background-image: url("../images/projetos/food-landingpage.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description {
+  scrollbar-width: none;
+}
+
+/* Estilização da Barra de Rolagem */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Fundo transparente */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2); /* Cor da barra */
+    border-radius: 4px; /* Cantos arredondados */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    width: 12px; /* Largura expandida ao passar o mouse */
+  }
+  
+  /* Estilização para Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Cor da barra e fundo */
+  }
+
+/* Classes Utilitárias */
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.skills_btn--is-active {
+  --tw-shadow: 0 0 0 0 rgb(0 0 0 / 0.0), 0 0 0 0 rgb(0 0 0 / 0.0);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 0px 0 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transform: scale(.95);
+}
+
+.slider {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Padrão */
+  scroll-behavior: smooth;
+}
