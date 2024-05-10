@@ -12,7 +12,7 @@ $(document).ready(function () {
     var projetos = [
       {
           nome: "Food - Landing Page",
-          imagem: "./images/projetos/food-landingpage.gif",
+          imagem: "/images/projetos/food-landingpage.gif",
           descricao: "Landing page para um restaurante ficticio - by Larissa Kich",
           github: "https://github.com/Lxcier/food-landingPage",
           vercel: "https://food-landing-page-flame.vercel.app/",
@@ -20,7 +20,7 @@ $(document).ready(function () {
       },
       {
         nome: "Disney+ (Clone)",
-        imagem: "./images/projetos/disney+.gif",
+        imagem: "/images/projetos/disney+.gif",
         descricao: "Página clone do Disney+ / versão antiga by Gian Souza",
         github: "https://github.com/Lxcier/disneyplus_clone",
         vercel: "https://disneyplus-clone-opal.vercel.app/",
@@ -28,7 +28,7 @@ $(document).ready(function () {
     },
     {
       nome: "The Chosen - Project",
-      imagem: "./images/projetos/thechosen.gif",
+      imagem: "/images/projetos/thechosen.gif",
       descricao: "Landing page sobre a série The Chosen.",
       github: "https://github.com/Lxcier/TheChosen",
       vercel: "https://the-chosen-one.vercel.app/",
@@ -36,7 +36,7 @@ $(document).ready(function () {
     },
     {
       nome: "FindJobs",
-      imagem: "./images/projetos/findjobs.gif",
+      imagem: "/images/projetos/findjobs.gif",
       descricao: "Site que simula uma plataforma para encontrar vagas de emprego. Similiar ao InfoJobs",
       github: "https://github.com/Lxcier/FindJobs",
       vercel: "https://find-jobs-sepia.vercel.app/index.html",
@@ -102,15 +102,15 @@ $(document).ready(function () {
     // Funções para controlar a animação do logo
     function animarLogo() {
       const srcInicial = logoImage.attr('src');
-      if (srcInicial === './images/gifs/logo_end.png') {
-        logoImage.attr('src', './images/gifs/logo_entering.gif');
+      if (srcInicial === '/images/gifs/logo_end.png') {
+        logoImage.attr('src', '/images/gifs/logo_entering.gif');
         setTimeout(() => {
-          logoImage.attr('src', './images/gifs/logo_start.png');
+          logoImage.attr('src', '/images/gifs/logo_start.png');
         }, 1260);
       } else {
-        logoImage.attr('src', './images/gifs/logo_return.gif');
+        logoImage.attr('src', '/images/gifs/logo_return.gif');
         setTimeout(() => {
-          logoImage.attr('src', './images/gifs/logo_end.png');
+          logoImage.attr('src', '/images/gifs/logo_end.png');
         }, 1260);
       }
     }
