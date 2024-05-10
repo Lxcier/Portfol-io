@@ -12,7 +12,7 @@ $(document).ready(function () {
     var projetos = [
       {
           nome: "Food - Landing Page",
-          imagem: "..\dist\images\projetos\food-landingpage.gif",
+          imagem: "/images/projetos/food-landingpage.gif",
           descricao: "Landing page para um restaurante ficticio - by Larissa Kich",
           github: "https://github.com/Lxcier/food-landingPage",
           vercel: "https://food-landing-page-flame.vercel.app/",
@@ -196,7 +196,6 @@ $(document).ready(function () {
   // Função para criar um elemento de projeto
   function criarElementoProjeto(projeto) {
       var elemento = $('<div class="projeto relative bg-gray-900 rounded-lg shadow-md hover:shadow-lg transform transition-shadow duration-300"></div>');
-      // ... (adicione o restante do código HTML do projeto aqui)
   
     // Adicionar HTML do projeto
     elemento.append(
