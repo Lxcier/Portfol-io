@@ -4,11 +4,11 @@ $(document).ready(function () {
     const skillButtons = $('[data-skill-button]');
     const hardSkillContainer = $('.text_container-hard');
     const softSkillContainer = $('.text_container-soft');
-    const logoImage = $('#logo-image');
+    const logoImage = $('.logo_image');
     const logoDiv = $('#logo');
     const itensHabilidade = $('.item-habilidade');
   
-    // Array de projetos (substitua pelos seus projetos)
+    // Array de projetos
     var projetos = [
       {
           nome: "Food - Landing Page",
@@ -102,15 +102,15 @@ $(document).ready(function () {
     // Funções para controlar a animação do logo
     function animarLogo() {
       const srcInicial = logoImage.attr('src');
-      if (srcInicial === '/images/gifs/logo_end.png') {
-        logoImage.attr('src', '/images/gifs/logo_entering.gif');
+      if (srcInicial === '/src/images/gifs/logo_end.png') {
+        logoImage.attr('src', '/src/images/gifs/logo_entering.gif');
         setTimeout(() => {
-          logoImage.attr('src', '/images/gifs/logo_start.png');
+          logoImage.attr('src', '/src/images/gifs/logo_start.png');
         }, 1260);
       } else {
-        logoImage.attr('src', '/images/gifs/logo_return.gif');
+        logoImage.attr('src', '/src/images/gifs/logo_return.gif');
         setTimeout(() => {
-          logoImage.attr('src', '/images/gifs/logo_end.png');
+          logoImage.attr('src', '/src/images/gifs/logo_end.png');
         }, 1260);
       }
     }
