@@ -7,6 +7,8 @@ $(document).ready(function () {
     const logoImage = $('#logo-image');
     const logoDiv = $('#logo');
     const itensHabilidade = $('.item-habilidade');
+    const mobileMenuBtn =$('#mobile-btn');
+    const mobileMenu = $('#mobile-navbar');
   
     // Array de projetos
     var projetos = [
@@ -150,6 +152,33 @@ $(document).ready(function () {
       var tecnologiaSelecionada = $(this).val();
       filtrarProjetos(tecnologiaSelecionada);
     });
+
+    //abre menu mobile
+    mobileMenuBtn.on('click', function () {
+      mobileMenuBtn.toggleClass('mobile_btn--is-active');
+      mobileMenuBtn.find('i').toggleClass('bi-x');
+
+      if (mobileMenuBtn.hasClass('mobile_btn--is-active')) {  
+        mobileMenu.addClass('mobile_navbar--is-active');
+        mobileMenu.removeClass('animate__bounceOut');
+        mobileMenu.addClass('animate__bounceIn');
+      } else {
+        mobileMenu.removeClass('animate__bounceIn');
+        mobileMenu.addClass('animate__bounceOut');
+        setTimeout(() => {
+          mobileMenu.removeClass('mobile_navbar--is-active');
+        }, 400);
+      }
+    });
+    
+    
+    
+    // $('#mobile-navbar').toggleClass('animate__bounceIn');
+    // $('#mobile-btn').on('click', function () {
+    //   $('#mobile-navbar').hasClass('animate__bounceIn')
+    // });
+
+  
   
     // Exibir todos os projetos ao carregar a página
     filtrarProjetos("");

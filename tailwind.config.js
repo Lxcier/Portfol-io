@@ -15,6 +15,9 @@ module.exports = {
   
         'dst': '1280px',
         // => @media (min-width: 1280px) { ... }
+
+        'lg': '1440px', 
+        // => @media (min-width: 1440px) { ... }
       },
     }
   }

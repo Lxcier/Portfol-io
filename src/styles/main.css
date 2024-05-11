@@ -10,6 +10,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url("/src/images/background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 #header {
     @apply sticky top-0 z-10 bg-transparent h-20 flex items-center;
 }
@@ -35,24 +43,20 @@ html {
 }
 
 #social-list {
-    @apply flex space-x-4 items-center text-white;
+    @apply items-center text-white justify-center;
 }
 
 #social-list .social_list_item {
-    @apply p-2 rounded transition-all duration-300 transform hover:bg-gray-700 hover:text-blue-400   hover:scale-110;
+    @apply p-2 rounded transition-all duration-300 transform hover:bg-gray-700 hover:text-blue-400 hover:scale-110;
 }
 
 #content {
     margin: auto;
-    height: max-content;
-    background-image: url("/src/images/background.gif");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;
     position: relative;
     margin-top: -80px;
     padding-top: 80px;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 }
 
 #content::before,
@@ -71,10 +75,21 @@ html {
 .projeto_recente::before,
 .projeto::before {
   opacity: .3;
+  border-radius: 8px;
 }
 
-#navbar {
+#navbar, #mobile-navbar {
     @apply bg-gray-800 bg-opacity-60 rounded-3xl p-7;
+}
+
+#mobile-navbar {
+  @apply bg-opacity-80 absolute mr-2 z-10;
+  right: 20px;
+  width: 60%;
+}
+
+.mobile_navbar--is-active {
+  display: block;
 }
 
 #navbar-list {
@@ -126,7 +141,7 @@ aside {
 }
 
 .skill-description {
-    @apply text-white font-medium text-sm p-3;
+    @apply text-white font-medium text-sm;
 }
 .projeto_recente {
     @apply relative mt-2 mb-4 h-40 bg-gray-900 rounded-lg shadow-md hover:shadow-lg transform transition-shadow duration-300;
@@ -155,6 +170,10 @@ aside {
 
 .text_container--is-active {
   display: block;
+}
+
+.descricao-habilidade {
+  @apply hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm;
 }
 
 
@@ -243,6 +262,25 @@ aside {
     scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Cor da barra e fundo */
   }
 
+
+  /* medias queries  */
+
+  @media (min-width: 300px) {
+    .container {
+        max-width: 90%;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #mobile-navbar {
+      width: 40%;
+    }
+  }
+
 /* Classes Utilitárias */
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -266,7 +304,7 @@ aside {
 }
 
 #footer {
-  position: relative;
-  background: linear-gradient(90deg, #020024 0%, #3b82f6 47%, #020024 100%);
-  box-shadow: -5px -14px 20px 11px #0200249c;
+  position: fixed;
+  bottom: 0;
 }
+
