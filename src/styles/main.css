@@ -8,7 +8,6 @@
 /* Configurações Gerais */
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll;
 }
 
 #header {
@@ -45,7 +44,7 @@ html {
 
 #content {
     margin: auto;
-    height: auto;
+    height: max-content;
     background-image: url("/src/images/background.gif");
     background-size: 100%;
     background-position: center;
@@ -54,7 +53,6 @@ html {
     margin-top: -80px;
     padding-top: 80px;
     padding-bottom: 20vh;
-    overflow-y: hidden;
 }
 
 #content::before,
@@ -126,6 +124,7 @@ aside {
 .text_container-soft {
     @apply w-60 absolute z-10 mt-2 rounded bg-gray-800 bg-opacity-80;
 }
+
 .skill-description {
     @apply text-white font-medium text-sm p-3;
 }
@@ -157,6 +156,7 @@ aside {
 .text_container--is-active {
   display: block;
 }
+
 
 .info--is-active {
   display: flex;
@@ -266,9 +266,7 @@ aside {
 }
 
 #footer {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,130,246,1) 47%, rgba(0,212,255,1) 100%);
-  box-shadow: -3px -71px 146px 22px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -3px -71px 146px 22px rgba(0,0,0,0.75);
-  -moz-box-shadow: -3px -71px 146px 22px rgba(0,0,0,0.75);
+  position: relative;
+  background: linear-gradient(90deg, #020024 0%, #3b82f6 47%, #020024 100%);
+  box-shadow: -5px -14px 20px 11px #0200249c;
 }

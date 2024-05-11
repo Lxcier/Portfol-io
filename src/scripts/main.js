@@ -4,7 +4,7 @@ $(document).ready(function () {
     const skillButtons = $('[data-skill-button]');
     const hardSkillContainer = $('.text_container-hard');
     const softSkillContainer = $('.text_container-soft');
-    const logoImage = $('.logo_image');
+    const logoImage = $('#logo-image');
     const logoDiv = $('#logo');
     const itensHabilidade = $('.item-habilidade');
   
