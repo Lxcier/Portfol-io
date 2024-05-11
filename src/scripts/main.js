@@ -102,15 +102,15 @@ $(document).ready(function () {
     // Funções para controlar a animação do logo
     function animarLogo() {
       const srcInicial = logoImage.attr('src');
-      if (srcInicial === '/src/images/gifs/logo_end.png') {
-        logoImage.attr('src', '/src/images/gifs/logo_entering.gif');
+      if (srcInicial === 'images/gifs/logo_end.png') {
+        logoImage.attr('src', 'images/gifs/logo_entering.gif');
         setTimeout(() => {
-          logoImage.attr('src', '/src/images/gifs/logo_start.png');
+          logoImage.attr('src', 'images/gifs/logo_start.png');
         }, 1260);
       } else {
-        logoImage.attr('src', '/src/images/gifs/logo_return.gif');
+        logoImage.attr('src', 'images/gifs/logo_return.gif');
         setTimeout(() => {
-          logoImage.attr('src', '/src/images/gifs/logo_end.png');
+          logoImage.attr('src', 'images/gifs/logo_end.png');
         }, 1260);
       }
     }
