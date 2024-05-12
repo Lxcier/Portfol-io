@@ -51,17 +51,15 @@ body {
 }
 
 #content {
-    margin: auto;
-    height: 100%;
-    position: relative;
-    margin-top: -80px;
-    padding-top: 80px;
-    padding-bottom: 10vh;
+  margin: auto;
+  height: 160vh;
+  margin-top: -80px;
+  padding-top: 85px;
+  padding-bottom: 10vh;
+  position: relative;
 }
 
-#content::before,
-.projeto_recente::before,
-.projeto::before {
+body::before, .projeto_recente::before, .projeto::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -107,7 +105,6 @@ body {
 aside {
     @apply bg-gray-800 bg-opacity-60 rounded-3xl p-7;
     margin-left: calc(268px + 28px);
-    width: calc(100% - 296px);
 }
 
 .tab_image {
@@ -152,9 +149,14 @@ aside {
   opacity: .3;
 }
 
+.projeto{
+  @apply relative bg-gray-900 rounded-lg shadow-md hover:shadow-lg transform transition-shadow duration-300;
+  width: 16rem;
+}
+
 /* Controle de Visibilidade */
 .tab,
-.info {
+.info-1, .info-2 {
   display: none;
 }
 
@@ -173,7 +175,7 @@ aside {
 }
 
 .descricao-habilidade {
-  @apply hidden absolute z-30 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm;
+  @apply absolute z-50 w-60 p-2 mt-3 -ml-2 rounded bg-gray-800 bg-opacity-90 text-white text-sm;
 }
 
 
@@ -266,12 +268,31 @@ aside {
   /* medias queries  */
 
   @media (min-width: 300px) {
+    #content {
+      min-width: 300px;
+      max-width: 639px;
+    }
+
     .container {
         max-width: 90%;
+    }
+
+    .tab {
+      margin-left: 0;
+      width: 100%
+    }
+
+    .info--is-active {
+      flex-direction: column;
     }
   }
 
   @media (min-width: 640px) {
+    #content{
+      min-width: 641px;
+      max-width: 1024px;
+    }
+
     .container {
         max-width: 90%;
     }
@@ -279,7 +300,44 @@ aside {
     #mobile-navbar {
       width: 40%;
     }
+
+    #content::before {
+      height: 100vh;
+    }    
+    
+    .info--is-active {
+      flex-direction: column;
+    }
   }
+
+  @media (min-width: 1024px) {
+    #content {
+      min-width: 1025px;
+      max-width: 1360px;
+    }
+    
+    #content::before {
+      height: 100%;
+    }
+
+    .container {
+      max-width: 90%;
+   }
+
+    .tab {
+      max-width: calc(100% - 230px);
+      margin-left: 230px;
+    }
+
+    .info-1 {
+      flex-direction: row;
+    }
+
+    .info-2 {
+      flex-direction: column;
+    }
+  }
+
 
 /* Classes Utilitárias */
 .shadow-md {
@@ -306,5 +364,7 @@ aside {
 #footer {
   position: fixed;
   bottom: 0;
+  left: 0;
 }
+
 

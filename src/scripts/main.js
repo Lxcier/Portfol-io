@@ -64,14 +64,18 @@ $(document).ready(function () {
     }
   
     // Funções para controlar a visibilidade das informações de habilidades
-    function ocultarTodasInfos() {
-      $('.info').removeClass('info--is-active');
+    function ocultarTodasInfos1() {
+      $('.info-1').removeClass('info--is-active');
+    }
+    function ocultarTodasInfos2() {
+      $('.info-2').removeClass('info--is-active');
     }
   
     function exibirInfo(botaoHabilidade) {
       const idInfoAlvo = botaoHabilidade.data('skill-button');
       const infoAlvo = $(`[data-skill-id=${idInfoAlvo}]`);
-      ocultarTodasInfos();
+      ocultarTodasInfos1();
+      ocultarTodasInfos2();
       infoAlvo.addClass('info--is-active');
       setTimeout(() => {
         infoAlvo.addClass('animate__fadeIn');
@@ -104,15 +108,15 @@ $(document).ready(function () {
     // Funções para controlar a animação do logo
     function animarLogo() {
       const srcInicial = logoImage.attr('src');
-      if (srcInicial === 'images/gifs/logo_end.png') {
-        logoImage.attr('src', 'images/gifs/logo_entering.gif');
+      if (srcInicial === '/images/gifs/logo_end.png') {
+        logoImage.attr('src', '/images/gifs/logo_entering.gif');
         setTimeout(() => {
-          logoImage.attr('src', 'images/gifs/logo_start.png');
+          logoImage.attr('src', '/images/gifs/logo_start.png');
         }, 1260);
       } else {
-        logoImage.attr('src', 'images/gifs/logo_return.gif');
+        logoImage.attr('src', '/images/gifs/logo_return.gif');
         setTimeout(() => {
-          logoImage.attr('src', 'images/gifs/logo_end.png');
+          logoImage.attr('src', '/images/gifs/logo_end.png');
         }, 1260);
       }
     }
@@ -171,15 +175,7 @@ $(document).ready(function () {
       }
     });
     
-    
-    
-    // $('#mobile-navbar').toggleClass('animate__bounceIn');
-    // $('#mobile-btn').on('click', function () {
-    //   $('#mobile-navbar').hasClass('animate__bounceIn')
-    // });
 
-  
-  
     // Exibir todos os projetos ao carregar a página
     filtrarProjetos("");
   
@@ -224,7 +220,7 @@ $(document).ready(function () {
   
   // Função para criar um elemento de projeto
   function criarElementoProjeto(projeto) {
-      var elemento = $('<div class="projeto relative bg-gray-900 rounded-lg shadow-md hover:shadow-lg transform transition-shadow duration-300"></div>');
+      var elemento = $('<div class="projeto"></div>');
   
     // Adicionar HTML do projeto
     elemento.append(
