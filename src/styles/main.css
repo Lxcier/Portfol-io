@@ -330,7 +330,7 @@ aside {
     }
 
     .info-1 {
-      flex-direction: row;
+      flex-direction: column;
     }
 
     .info-2 {
