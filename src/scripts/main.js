@@ -45,11 +45,11 @@ $(document).ready(function () {
       tecnologias: ["html", "css"]
     },
     {
-      nome: "Calculadora Vue.js"
-      imagem: "/images/projetos/calculadoravuejs.gif"
-      descricao: "Calculadora simples utilizando o Vue.js"
-      github: "https://github.com/Lxcier/calculadora_vuejs"
-      vercel: "https://calculadora-vuejs-three.vercel.app/"
+      nome: "Calculadora Vue.js",
+      imagem: "/images/projetos/calculadoravuejs.gif",
+      descricao: "Calculadora simples utilizando o Vue.js",
+      github: "https://github.com/Lxcier/calculadora_vuejs",
+      vercel: "https://calculadora-vuejs-three.vercel.app/",
       tecnologias: ["vue"]
     }
   
