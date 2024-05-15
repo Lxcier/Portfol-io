@@ -26,7 +26,7 @@ $(document).ready(function () {
         descricao: "Página clone do Disney+ / versão antiga by Gian Souza",
         github: "https://github.com/Lxcier/disneyplus_clone",
         vercel: "https://disneyplus-clone-opal.vercel.app/",
-        tecnologias: ["html", "javascript"] 
+        tecnologias: ["html", "css", "javascript"] 
     },
     {
       nome: "The Chosen - Project",
@@ -34,7 +34,7 @@ $(document).ready(function () {
       descricao: "Landing page sobre a série The Chosen.",
       github: "https://github.com/Lxcier/TheChosen",
       vercel: "https://the-chosen-one.vercel.app/",
-      tecnologias: ["html", "css"] 
+      tecnologias: ["html", "css", "javascript"] 
     },
     {
       nome: "FindJobs",
@@ -42,8 +42,16 @@ $(document).ready(function () {
       descricao: "Site que simula uma plataforma para encontrar vagas de emprego. Similiar ao InfoJobs",
       github: "https://github.com/Lxcier/FindJobs",
       vercel: "https://find-jobs-sepia.vercel.app/index.html",
-      tecnologias: ["html", "css"] 
-  },
+      tecnologias: ["html", "css"]
+    },
+    {
+      nome: "Calculadora Vue.js"
+      imagem: "/images/projetos/calculadoravuejs.gif"
+      descricao: "Calculadora simples utilizando o Vue.js"
+      github: "https://github.com/Lxcier/calculadora_vuejs"
+      vercel: "https://calculadora-vuejs-three.vercel.app/"
+      tecnologias: ["vue"]
+    }
   
       // ... adicione mais projetos aqui
     ];
@@ -234,7 +242,7 @@ $(document).ready(function () {
           <i class="bi bi-github mr-2"></i>
           GitHub 
         </a>
-        <a href="${projeto.vercel} target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded inline-flex items-center">
+        <a href="${projeto.vercel}" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded inline-flex items-center">
           <i class="bi bi-box-arrow-up-right mr-2"></i>
           Vercel
         </a>
